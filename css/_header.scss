@@ -1,0 +1,57 @@
+header {
+    padding: 2rem;
+    .header__left {
+        img {
+            width: 8rem;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0.8rem;
+            margin-bottom: 0;
+            li {
+                margin-right: 3rem;
+               
+            }
+        }
+    }
+    .header__right {
+        display: none;
+    }
+
+    @include mq(pc){
+        height: 8rem;
+        line-height: 8rem;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        
+        
+        .header__left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            img {
+                width: 10rem;
+            }
+            ul {
+                margin-left: 6rem;
+            }
+        }
+        .header__right {
+            display: initial;
+            p {
+                margin: 0;
+                a {
+                    background-color: #1b1b1b;
+                    color: white;
+                    display: block;
+                    padding: 0rem 6rem;
+                }
+            }
+        }
+
+    }
+}

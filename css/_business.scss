@@ -1,0 +1,99 @@
+.business__content {
+    margin-bottom: 8rem;
+    @include mq(pc) {
+        margin-bottom: 12rem;
+    }
+    .head {
+        &::after {
+            content: '';
+            height: 1px;
+            width: 4rem;
+            display: block;
+            background-color: black;
+            margin-bottom: 3.4rem;
+        }
+        
+        h2 {
+            font-size: 3.6rem;
+            letter-spacing: 10px;
+            font-weight: normal;
+            margin: 0;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 2.4rem;  
+            @include mq(pc) {
+                margin-bottom: 3.6rem;
+            
+            }
+        }
+        
+    
+
+    }
+    .business__latter {
+        @include mq(pc) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            
+
+        }
+        .business__photo__former, .business__photo__latter {
+            display: flex;
+            flex-direction: column;
+            
+            .photo__box {
+                width: 100%;
+                @include mq(pc) {
+                    width: 33rem;
+                    &:nth-of-type(1) {
+                        margin-bottom: 5rem;
+                        
+                    }
+                    
+
+                }
+                
+                p {
+                    margin-top: 3rem;
+                    margin-bottom: 1rem;
+                    @include mq(pc) {
+                        width: 40rem;
+                        margin-bottom: 1rem;
+
+                    }
+                    
+                    &::before {
+                        content: '';
+                        width: 1rem;
+                        height: 1px;
+                        background-color: black;
+                        display: inline-block;
+                        margin-right: 1rem;
+                        transform: translateY(-0.4rem);
+                    }
+                }
+                
+                
+            }
+        }
+        .business__photo__former {
+            @include mq(pc) {
+                margin-right: 6.4rem;
+                .photo__box {
+                    &:first-child p {
+                        margin-top: 10rem;
+                    
+                    }
+                }
+
+            }
+            
+           
+        }
+
+    }
+    
+}

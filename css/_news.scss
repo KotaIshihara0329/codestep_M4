@@ -1,0 +1,120 @@
+.mobile {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+.visual {
+    img{
+        height: 60rem;
+    }
+}
+@include mq(pc) {
+    .mobile {
+        padding-left: initial;
+        padding-right: initial;
+    }
+    
+    .container {
+        width: 100rem;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+    }
+    
+}
+
+.container__news {
+    margin-top: 8rem;
+    margin-bottom: 9rem;
+    @include mq(pc) {
+        .container__news {
+            margin: 12rem auto; 
+        }
+    }
+    .head {
+        &::after {
+            content: '';
+            height: 1px;
+            width: 4rem;
+            display: block;
+            background-color: black;
+            margin-bottom: 4.5rem;
+        }
+        
+        h2 {
+            font-size: 3.6rem;
+            letter-spacing: 10px;
+            font-weight: normal;
+            margin: 0;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 2.4rem;  
+            @include mq(pc) {
+                margin-bottom: 3.6rem;
+            
+            }
+        }
+
+    }
+    .news__latter {
+        ul {
+            li{
+                .news__latter__head {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        font-weight: normal;
+                        padding-bottom: 0.3rem;
+                        padding-top: 0.3rem;
+                        margin: 0;
+                    }
+                    #press {
+                        padding: 0 0.5rem;
+                    }
+                    p:last-child {
+                        padding: 0 0.7rem;
+                        margin-left: 1.9rem;
+                        font-size: 1.2rem;
+                        color: white;
+                        background-color: black;
+                        display: inline-block;
+                    }
+                    
+                    
+                }
+                p {
+                    margin-bottom: 4rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        @include mq(pc) {
+            ul {
+                display: flex;
+                flex-direction: row;
+                li {
+                    width: calc(100% / 3);
+                    &:nth-of-type(2) {
+                        border-left: 1px solid #000;
+                        height: 7.8rem;
+                        padding-left: 2rem;
+                    }
+                    &:nth-of-type(3) {
+                        border-left: 1px solid #000;
+                        height: 7.8rem;
+                        padding-left: 2rem;
+                    }
+
+                }
+                
+
+            }
+
+        }
+    }
+}
+    
+    
+
+    

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Codestep..." />
+    <meta property="og:description" content="Codestep..." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="http://codestep.com" />
+    <title>codestep</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__left">
+        <img src="images/logo.svg" alt="logo" />
+        <ul>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">BUSINESS</a></li>
+          <li><a href="#">COMPANY</a></li>
+        </ul>
+      </div>
+      <div class="header__right">
+        <p><a href="#">資料請求</a></p>
+      </div>
+    </header>
+    <main>
+      <div class="visual">
+        <img src="images/mainvisual.jpg" alt="mainvisual" />
+      </div>
+      <div class="container container__news mobile mobile">
+        <div class="head news__former">
+          <h2>NEWS</h2>
+          <p>ニュース</p>
+        </div>
+        <div class="news__latter">
+          <ul>
+            <li>
+              <div class="news__latter__head">
+                <time datetime="2021-01-01">2021.01.01</time>
+                <p>NEWS</p>
+              </div>
+              <p>飛行機が離陸しました。</p>
+            </li>
+            <li>
+              <div class="news__latter__head">
+                <time datetime="2021-01-02">2021.01.02</time>
+                <p id="press">PRESS</p>
+              </div>
+              <p>宇宙人が着陸しました。</p>
+            </li>
+            <li>
+              <div class="news__latter__head">
+                <time datetime="2021-01-03">2021.01.03</time>
+                <p>NEWS</p>
+              </div>
+              <p>宇宙人が書類を渡してきました。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="about__container">
+        <img src="images/about.jpg" alt="about" />
+        <div class="about__text mobile">
+          <div class="head about__former">
+            <h2>ABOUT</h2>
+            <p>私たちについて</p>
+          </div>
+          <div class="about__latter">
+            <p>
+              宇宙人が書類を渡して来ました。そして、そこには、宇宙人が乗るUFOの設計図が入っていました。なんと、その設計図には地球奥深くには、UFOの材料を手に入れられる素材があるとのことが難しい宇宙語で書いてありました。しかしながら、それをどうやって取るのかが課題です。みんな驚きました。どしようって。でも、なんとかする。それが人間。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container business__container mobile">
+        <div class="business__content">
+          <div class="head business__former">
+            <h2>BUSINESS</h2>
+            <p>事業内容</p>
+          </div>
+          <div class="business__latter">
+            <div class="business__photo__former">
+              <div class="photo__box">
+                <p>Web制作・マーケティング</p>
+                <picture>
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/business1@1x.jpg 1x,
+                      images/business1@2x.jpg 2x
+                    "
+                  />
+                  <img src="images/business1@1x.jpg" alt="business1" />
+                </picture>
+              </div>
+              <div class="photo__box">
+                <p>インターネットメディア事業</p>
+                <picture>
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/business2@1x.jpg 1x,
+                      images/business2@2x.jpg 2x
+                    "
+                  />
+                  <img src="images/business2@1x.jpg" alt="business1" />
+                </picture>
+              </div>
+            </div>
+            <div class="business__photo__latter">
+              <div class="photo__box">
+                <p>プロモーション企画・制作</p>
+                <picture>
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/business3@1x.jpg 1x,
+                      images/business3@2x.jpg 2x
+                    "
+                  />
+                  <img src="images/business3@1x.jpg" alt="business1" />
+                </picture>
+              </div>
+              <div class="photo__box">
+                <p>ソーシャル企画・運営</p>
+                <picture>
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      images/business4@1x.jpg 1x,
+                      images/business4@2x.jpg 2x
+                    "
+                  />
+                  <img src="images/business4@1x.jpg" alt="business1" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="container container__company mobile">
+        <div class="company__content">
+          <div class="head business__former">
+            <h2>COMPANY</h2>
+            <p>会社情報</p>
+          </div>
+          <div class="business__detail">
+            <dl>
+              <dt>会社名</dt>
+              <dd>ウェブエンターテイメントデザイン株式会社</dd>
+            </dl>
+            <dl>
+              <dt>所在地</dt>
+              <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
+            </dl>
+            <dl>
+              <dt>代表</dt>
+              <dd class="detail--two">石原昂汰</dd>
+            </dl>
+            <dl>
+              <dt>設立</dt>
+              <dd class="detail--two">2021年1月1日</dd>
+            </dl>
+            <dl>
+              <dt>資本金</dt>
+              <dd>3,000,000円</dd>
+            </dl>
+            <dl>
+              <dt>事業内容</dt>
+              <div>
+                <dd class="detail--four">Web制作・マーケティング</dd>
+                <dd class="detail--four">インターネットメディア事業</dd>
+                <dd class="detail--four">プロモーション企画・制作</dd>
+                <dd class="detail--four">ソーシャル企画・運営</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <img src="images/company.jpg" alt="company" />
+      </section>
+    </main>
+    <footer>
+      <div class="container__footer container">
+        <div class="footer__content">
+          <img src="images/logo.svg" alt="logo" />
+          <p>
+            Web Entertainment Design Inc. <br />
+            West Building 3F <br />
+            9-99 Sakuragaokacho Shibuya-ku <br />
+            Tokyo, Japan 150-0031 <br />
+            T/99-9999-9999
+          </p>
+        </div>
+        <p class="copyright">&copy; Web Entertainment Design Inc.</p>
+      </div>
+    </footer>
+  </body>
+</html>

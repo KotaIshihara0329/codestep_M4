@@ -1,0 +1,80 @@
+$breakpoints: (
+    "mb": "screen and (min-width: 400px)",
+    "ip": "screen and (min-width: 700px)",
+    "pc": "screen and (min-width: 900px)",
+   
+) !default;
+
+@mixin mq($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+::selection {
+  background-color: pink;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: Arial,Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    background-color: #F0F0F0;
+}
+
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  object-fit: cover;
+
+}
+
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+textarea {
+  resize: none;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+

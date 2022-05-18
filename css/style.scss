@@ -1,0 +1,51 @@
+@import "./prepare";
+@import "./header";
+@import "./news";
+@import "./about";
+@import './business';
+@import "./company";
+
+
+
+footer {
+    @include mq(pc) {
+        margin-top: 18.5rem;
+    }
+    background-color: white;
+    .container__footer {
+        padding: 4.8rem 1.6rem 2rem;
+        height: 25rem;
+        @include mq(pc) {
+            height: 21.4rem;
+            padding-top: 3rem;
+        }
+        .footer__content {
+            @include mq(pc) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                
+            }
+            
+            img {
+                width: 8rem;
+                @include mq(pc) {
+                    width: 10rem;
+
+                    
+                }
+            }
+            p {
+                margin: 0.8rem 0 3.7rem;
+               
+            }
+            
+        }
+        .copyright {
+            font-size: 1.2rem;
+            margin: 0;
+
+        }
+    }
+}

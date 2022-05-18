@@ -1,0 +1,64 @@
+.about__container {
+    width: 100%;
+    @include mq(pc) {
+        display: flex;
+        flex-direction: row;  
+        
+    }
+    img {
+        height: 40rem;
+        width: 100%;
+        @include mq(pc) {
+            width: 55%;
+         
+        }
+    }
+    .about__text {
+        margin: 3rem 0 8rem;
+        @include mq(pc) {
+            margin-bottom: 12rem;
+            margin-top: 17.9rem;
+        }
+        .head {
+            &::after {
+                content: '';
+                height: 1px;
+                width: 4rem;
+                display: block;
+                background-color: black;
+                margin-bottom: 3.4rem;
+            }
+            
+            h2 {
+                font-size: 3.6rem;
+                letter-spacing: 10px;
+                font-weight: normal;
+                margin: 0;
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 2.4rem;  
+                @include mq(pc) {
+                    margin-bottom: 3.6rem;
+                
+                }
+            }
+            
+        
+
+        }
+        .about__latter {
+            p {
+                line-height: 3rem;
+                @include mq(pc) {
+                    width: 86%;
+                }
+            }
+        }
+        @include mq(pc) {
+            padding-left: 7rem;
+
+        }
+        
+    }
+}
